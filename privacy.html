@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>개인정보처리방침 · 기계중독 통계</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="in"><h1>기계중독 통계 · 개인정보처리방침</h1>
+<nav><a href="index.html">소개</a><a href="privacy.html">개인정보처리방침</a><a href="terms.html">서비스 약관</a></nav></div></header>
+<main>
+<p class="muted">시행일: 2026년 10월 16일</p>
+
+<h2>1. 개요</h2>
+<p>기계중독 통계(이하 “앱”)는 유튜브 채널 “기계중독” 운영자가 본인 소유의 가정용 서버에서 직접 운영하는 개인용 대시보드입니다.
+앱은 채널 소유자 본인 외의 사용자를 받지 않으며, 다른 사람의 개인정보를 수집하지 않습니다.</p>
+
+<h2>2. 수집하는 정보</h2>
+<p>채널 소유자가 Google 계정으로 허가한 경우에만, 다음 정보를 YouTube Data API와 YouTube Analytics API로 <b>읽기 전용</b>으로 가져옵니다.</p>
+<ul>
+<li>채널 정보: 채널 ID, 채널 이름, 구독자 수, 총 조회수, 영상 수</li>
+<li>영상 정보: 영상 ID, 제목, 게시일, 길이, 조회·좋아요·댓글 수</li>
+<li>채널 분석(집계 수치): 일별 조회수, 시청 시간, 평균 시청 시간, 구독·구독 취소 수, 좋아요·댓글·공유 수,
+유입 경로·기기·국가별 조회수, 연령·성별 시청 비율</li>
+<li>인증 정보: Google이 발급한 갱신 토큰(refresh token)</li>
+</ul>
+<p>개별 시청자를 식별할 수 있는 정보(시청자 이름, 계정, 댓글 작성자 정보 등)는 수집하지 않습니다. 연령·성별·국가 정보는 Google이 제공하는 익명 집계 비율입니다.</p>
+
+<h2>3. 이용 목적</h2>
+<p>수집한 정보는 채널 소유자 본인이 자기 채널의 성과를 대시보드에서 확인하는 용도로만 사용합니다. 광고, 판매, 프로파일링, 머신러닝 모델 학습에는 사용하지 않습니다.</p>
+
+<h2>4. 보관 위치와 기간</h2>
+<ul>
+<li>모든 정보는 채널 소유자의 가정용 서버(로컬 네트워크) 안에만 저장되며, 외부 서버로 전송하거나 다른 사람과 공유하지 않습니다.</li>
+<li>갱신 토큰은 서버의 설정 파일에 소유자만 읽을 수 있는 권한(600)으로 저장됩니다.</li>
+<li>통계 기록은 소유자가 삭제하거나 연결을 해제할 때까지 보관합니다.</li>
+</ul>
+
+<h2>5. 제3자 제공</h2>
+<p>수집한 정보를 제3자에게 제공·판매·공유하지 않습니다.</p>
+
+<h2>6. Google API 서비스 사용자 데이터 정책 준수</h2>
+<p>앱이 Google API에서 받은 정보의 사용 및 다른 앱으로의 전송은
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>의
+제한적 사용(Limited Use) 요구사항을 포함하여 해당 정책을 준수합니다.
+앱은 <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API 서비스</a>를 사용하며,
+사용자는 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>과
+<a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>의 적용을 받습니다.</p>
+
+<h2>7. 접근 권한 철회와 삭제</h2>
+<ul>
+<li>대시보드의 [연결 설정 → 연결 해제]로 저장된 토큰을 삭제할 수 있습니다.</li>
+<li>Google 계정의 <a href="https://myaccount.google.com/permissions">보안 → 서드파티 앱 액세스</a>에서 언제든 앱의 접근 권한을 철회할 수 있습니다.</li>
+<li>저장된 통계 삭제를 원하면 이 사이트 저장소의 Issues로 요청할 수 있으며, 서버에서 즉시 삭제합니다.</li>
+</ul>
+
+<h2>8. 문의</h2>
+<p><span class="contact">문의: 이 사이트를 올린 GitHub 저장소의 <a class="issues" href="#">Issues</a> 탭에 남겨 주세요.</span></p>
+
+<h2>Privacy Policy (English summary)</h2>
+<p>기계중독 통계 is a personal, self-hosted dashboard used only by the owner of the YouTube channel “기계중독”.
+With the owner’s consent it reads, in read-only mode (scopes youtube.readonly and yt-analytics.readonly), that channel’s public
+statistics and aggregated analytics. Data is stored only on the owner’s home server, is never sold or shared with third parties,
+and is not used for advertising or model training. Its use and transfer of information received from Google APIs adheres to the
+Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked at
+myaccount.google.com/permissions. Contact: the Issues tab of the GitHub repository hosting this site.</p>
+</main>
+<footer>© 2026 기계중독 통계</footer>
+<script>(function(){var h=location.hostname,u=h.split(".")[0];if(/\.github\.io$/.test(h)){var a=document.querySelectorAll("a.issues");for(var i=0;i<a.length;i++)a[i].href="https://github.com/"+u+"/"+h+"/issues";}})();</script></body></html>

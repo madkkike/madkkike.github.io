@@ -1,0 +1,15 @@
+:root{--bg:#f7efd9;--ink:#2e1a0e;--muted:#6b4c2f;--line:#c9a64a;--card:#fbf5e4;--accent:#8c2f39}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;line-height:1.7}
+header{background:#3b2414;color:#f6e7bd;border-bottom:4px solid var(--line)}
+header .in,main{max-width:860px;margin:0 auto;padding:18px 20px}
+header h1{margin:0;font-size:22px}
+header nav a{color:#f2d27a;margin-right:16px;text-decoration:none;font-size:14px}
+main h2{border-bottom:2px solid var(--line);padding-bottom:4px;margin-top:28px;font-size:18px}
+.card{background:var(--card);border:1px solid #e0d1ad;border-left:5px solid var(--line);border-radius:4px;padding:12px 16px;margin:12px 0}
+small,.muted{color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border-bottom:1px solid #e0d1ad;text-align:left;padding:6px 8px;vertical-align:top}
+th{background:#efe3c4}
+footer{max-width:860px;margin:30px auto;padding:0 20px 30px;color:var(--muted);font-size:13px}
+a{color:var(--accent)}
